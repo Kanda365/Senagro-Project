@@ -1,0 +1,374 @@
+body { 
+    background: linear-gradient(90deg, #456901 0%,  #a5a800f6 50%, #71ad00 100%); 
+    background-size: 400% 400%; 
+    animation: ColorChange 8s ease infinite; 
+    } 
+ 
+ @keyframes ColorChange { 
+    0%{background-position:0% 50%} 
+    50%{background-position:100% 50%} 
+    100%{background-position:0% 50%} 
+    } 
+
+    /* Estilos base para la barra de navegación */
+.navbar-toggler {
+    padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
+    font-size: var(--bs-navbar-toggler-font-size);
+    line-height: 1;
+    color: rgba(0, 0, 0, 0.55);
+    background-color: #babd0a;
+    border: var(--bs-border-width) solid rgb(167 221 35 / 10%);
+    border-radius: var(--bs-navbar-toggler-border-radius);
+    transition: var(--bs-navbar-toggler-transition);
+  }
+  .container-fluid{
+
+    width: 100%;
+    height: 100%;
+    
+    }
+  
+  .offcanvas {
+    position: fixed;
+    bottom: 0;
+    z-index: var(--bs-offcanvas-zindex);
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    color: var(--bs-offcanvas-color);
+    visibility: hidden;
+    background-color: #708308;
+    background-clip: padding-box;
+    outline: 0;
+    transition: var(--bs-offcanvas-transition);
+  }
+  
+  .offcanvas-title {
+    color: #cde741;
+    font-size: 70px;
+  }
+  
+  .nav-link.active,
+  .navbar-nav .show > .nav-link {
+    color: #fff;
+    padding: 20px 17px;
+    font-size: 27px;
+  }
+  
+  /* Media queries para ajustar los estilos según el tamaño de pantalla */
+  @media (max-width: 768px) {
+    /* Estilos para la barra de navegación en dispositivos móviles */
+    .navbar-toggler {
+      padding: 10px;
+      font-size: 20px;
+    }
+    
+    .offcanvas-title {
+      font-size: 40px;
+    }
+    
+    .nav-link.active,
+    .navbar-nav .show > .nav-link {
+      padding: 10px;
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    /* Estilos para la barra de navegación en dispositivos móviles con pantalla pequeña */
+    .navbar-toggler {
+      padding: 5px;
+      font-size: 16px;
+    }
+    
+    .offcanvas-title {
+      font-size: 30px;
+    }
+    
+    .nav-link.active,
+    .navbar-nav .show > .nav-link {
+      padding: 5px;
+      font-size: 14px;
+    }
+  }
+  
+
+
+
+
+
+
+.video-responsive {
+position: relative;
+padding-bottom: 56.25%; 
+padding-top: 80px; 
+height: 0;
+overflow: hidden;
+}
+.video-responsive iframe,
+.video-responsive object,
+.video-responsive embed {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+/*-----------------------------------------------*/
+
+
+
+#rer {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+ion-icon {
+    font-size: 100px;
+}
+
+.box1, .box2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation-name: animacion;
+    animation-duration: 2s;
+}
+
+
+.text1, .text2 {
+    font-size: 28px;
+    max-width: 90%;
+    min-height: 100px;
+    margin-top: 60px;
+    color: #000000;
+    text-align: center;
+    padding: 10px;
+    background-color: #F3E6B9;
+    animation: pulse 1s infinite;
+    box-shadow: 0 0 10px #F3E6B9;
+}
+
+@media screen and (min-width: 768px) {
+    #rer {
+        padding: 40px;
+    }
+    
+    ion-icon {
+        font-size: 155px;
+    }
+    
+    .box1, .box2 {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    .text1, .text2 {
+        font-size: 47px;
+        max-width: 454px;
+        min-height: unset;
+        margin-top: 173px;
+    }
+}
+
+@keyframes animacion {
+    0% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 10px #F3E6B9;
+    }
+    50% {
+        box-shadow: 0 0 20px #F3E6B9;
+    }
+    100% {
+        box-shadow: 0 0 10px #F3E6B9;
+    }
+}
+
+/*------------------------------------------*/
+
+.box3 {
+    background: #251b00d2;
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 20px;
+  }
+
+  .maps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container {
+    padding: 50px 20px;
+    text-align: center;
+  }
+
+  .location1 {
+    color: #ffffff;
+    font-size: 28px;
+  }
+
+  .location2 {
+    color: #ffffff;
+    font-size: 18px;
+  }
+
+  @media screen and (min-width: 768px) {
+    .box3 {
+      padding: 115px 100px;
+    }
+
+    .maps {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+
+    .container {
+      padding: 124px 46px;
+      text-align: left;
+    }
+
+    .location1 {
+      font-size: 34px;
+    }
+
+    .location2 {
+      font-size: 22px;
+    }
+  }
+
+
+
+
+
+.fondo{
+    background-image: url(imag/tomatoes-1561565_1280.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    filter: drop-shadow(2px 4px 6px black);
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.form-wrap {
+    width: 400px;
+    background: #298d0061;
+    padding: 20px 25px;
+    margin: 100px auto;
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+    padding: 21px;
+}
+
+input {
+    width: calc(100% - 10px);
+    padding: 5px;
+    background: #fff;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+textarea {
+    width: calc(100% - 6px);
+    padding: 5px;
+    background: #fff;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    height: 120px;
+}
+
+input[type="submit"] {
+    background: #760000;
+    border: none;
+    padding: 5px 10px;
+    color: #ffffff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all ease 0.2s;
+}
+
+input[type="submit"]:hover {
+    background: #2e2d2d;
+    color: #fff;
+    box-shadow: 0px 0px 10px #fff;
+}
+
+
+
+
+.ver {
+    background: #19191b;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .color {
+    color: #ffffff;
+    font-size: 25px;
+    padding: 29px 20px;
+    width: 100%;
+  }
+  
+  .ret, .rata {
+    padding: 30px 0;
+    text-align: center;
+  }
+  
+  .btn {
+    display: inline-block;
+    margin: 0 2px;
+    width: 100px;
+    
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .color {
+      padding: 29px 72px;
+      text-align: left; /* ajustar la alineación a la izquierda */
+      width: auto;
+    }
+    
+    .ret, .rata {
+      flex-basis: auto;
+      padding: 0;
+      text-align: right;
+      width: auto;
+
+    }
+  }
+  
+  
+  
+  

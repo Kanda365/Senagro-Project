@@ -1,0 +1,720 @@
+*{
+
+padding: 0px;
+margin: 0px;
+
+
+}
+
+body{
+background: #ffffff;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom,  #ffffff,#000000);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #ffffff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+font-size: 16px; 
+}
+
+
+    /* Estilos base para la barra de navegación */
+    .navbar-toggler {
+        padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
+        font-size: var(--bs-navbar-toggler-font-size);
+        line-height: 1;
+        color: rgba(0, 0, 0, 0.55);
+        background-color: #babd0a;
+        border: var(--bs-border-width) solid rgb(167 221 35 / 10%);
+        border-radius: var(--bs-navbar-toggler-border-radius);
+        transition: var(--bs-navbar-toggler-transition);
+      }
+      .container-fluid{
+
+        width: 100%;
+        height: 100%;
+        
+    }
+      
+      .offcanvas {
+        position: fixed;
+        bottom: 0;
+        z-index: var(--bs-offcanvas-zindex);
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        color: var(--bs-offcanvas-color);
+        visibility: hidden;
+        background-color: #708308;
+        background-clip: padding-box;
+        outline: 0;
+        transition: var(--bs-offcanvas-transition);
+      }
+      
+      .offcanvas-title {
+        color: #cde741;
+        font-size: 70px;
+      }
+      
+      .nav-link.active,
+      .navbar-nav .show > .nav-link {
+        color: #fff;
+        padding: 20px 17px;
+        font-size: 27px;
+      }
+      
+      /* Media queries para ajustar los estilos según el tamaño de pantalla */
+      @media (max-width: 768px) {
+        /* Estilos para la barra de navegación en dispositivos móviles */
+        .navbar-toggler {
+          padding: 10px;
+          font-size: 20px;
+        }
+        
+        .offcanvas-title {
+          font-size: 40px;
+        }
+        
+        .nav-link.active,
+        .navbar-nav .show > .nav-link {
+          padding: 10px;
+          font-size: 16px;
+        }
+      }
+      
+      @media (max-width: 576px) {
+        /* Estilos para la barra de navegación en dispositivos móviles con pantalla pequeña */
+        .navbar-toggler {
+          padding: 5px;
+          font-size: 16px;
+        }
+        
+        .offcanvas-title {
+          font-size: 30px;
+        }
+        
+        .nav-link.active,
+        .navbar-nav .show > .nav-link {
+          padding: 5px;
+          font-size: 14px;
+        }
+      }
+
+.video-responsive {
+position: relative;
+padding-bottom: 56.25%; 
+padding-top: 80px; 
+height: 0;
+overflow: hidden;
+}
+.video-responsive iframe,
+.video-responsive object,
+.video-responsive embed {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+
+/* para que todo se mueva, cuando la pagina se achiquite o agrande*/
+  
+
+.video-responsive {
+      
+position: relative;
+padding-bottom: 56.25%; /* establese el ancho interior*/
+padding-top: 200%; /* Espacio del relleno requerido*/
+height: 0;
+overflow: hidden;
+
+}
+      
+.video-responsive iframe,
+.video-responsive object,
+.video-responsive embed {
+
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+      
+}
+ 
+      
+.contenedor{
+ 
+Justify-content: right;
+max-width: 75em;
+margin: 20px auto;
+display: grid;
+grid: gap 20px; 
+grid-template-rows: repeat(4, auto);
+grid-template-columns: repeat(3,1fr);
+grid-template-areas: 'header  header header header' ;
+
+}
+
+.img{
+
+width: 100%;
+height: 100%;
+}
+
+.gato{
+
+width: 100%;
+height: 90%;   
+
+}
+
+video{
+
+position: fixed;
+top:0;
+left: 0;
+width: 100vw;
+height:100vh;
+object-fit: cover;
+
+}
+
+
+
+
+/*TITULO*/
+
+
+.titulo{
+
+display: flex;
+flex-wrap: wrap;
+        
+}
+        
+.titulo-texto{
+        
+flex: 1;
+padding: 2;
+min-width: 300px;  
+    
+}
+
+
+/*TEXTO UNO PARTE INICIAL INTRODUCTORIA*/
+
+.vaca {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .vaca-texto {
+    flex: 1;
+    padding: 10px;
+    min-width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .vaca-texto:first-child {
+    flex: 2;
+    padding: 25px;
+    margin: 20px;
+    background-color: #a4af0b;
+    margin-bottom: 0px;
+    color: #000;
+    font-family: Raleway;
+  }
+  
+  .vaca-texto div {
+    padding: 20px;
+    margin: 20px;
+    background-color: #a4af0b;
+    color: #000;
+    font-size: 16px;
+    max-width: 90%;
+  }
+  
+  @media screen and (max-width: 767px) {
+    /* Estilos para pantallas con ancho máximo de 767px */
+    .vaca-texto {
+      min-width: 100%;
+      padding-top: 20px; /* Ajuste para mover los elementos hacia arriba */
+    }
+  
+    .vaca-texto:first-child {
+      flex: 1;
+    }
+  
+    .vaca-texto div {
+      flex: 1;
+    }
+  }
+  
+  
+  
+
+
+
+/*TEXTO DOS DEL PRODUCTO DE HUEVOS*/
+
+
+.huevos{
+
+display: flex;
+flex-wrap: wrap;
+
+}
+
+.huevos-texto{
+
+flex: 1;
+padding: 2;
+min-width: 0px;
+
+}
+
+
+.huevos-texto:first-child{
+
+flex: 2;
+padding: 25px;
+background-color: #ffffff;
+margin: 20px;  
+}
+
+
+.huevos-texto div{
+
+padding: 25px;
+background-color: #ffffff;
+margin: 20px;
+}
+    
+
+/*TEXTO TRES DEL PRODUCTO DE LACTEOS*/
+
+
+.leche{
+
+display: flex;
+flex-wrap: wrap;
+    
+}
+    
+.leche-texto{
+    
+flex: 1;
+padding: 2;
+min-width: 0px;
+    
+}
+    
+    
+.leche-texto:first-child{
+    
+flex: 2;
+padding: 25px;
+background-color: #ffffff;
+margin: 20px;  
+
+}
+    
+    
+.leche-texto div{
+    
+padding: 25px;
+background-color: #ffffff;
+margin: 20px;
+
+}
+
+
+/*TEXTO CUATRO DEL PRODUCTO DE FRUTAS Y VERDURAS*/
+
+
+.vegetales{
+
+display: flex;
+flex-wrap: wrap;
+    
+}
+    
+.vegetales-texto{
+    
+flex: 1;
+padding: 2;
+min-width: 0px;
+    
+}
+    
+    
+.vegetales-texto:first-child{
+    
+flex: 2;
+padding: 25px;
+background-color: #ffffff;
+margin: 20px;
+ 
+}
+    
+    
+.vegetales-texto div{
+    
+padding: 25px;
+background-color: #ffffff;
+margin: 20px;
+
+}
+
+
+/*TEXTO CINCO DEL PRODUCTO DE FLORES*/
+
+
+.flor{
+
+display: flex;
+flex-wrap: wrap;
+    
+}
+    
+.flor-texto{
+    
+flex: 1;
+padding: 2;
+min-width: 0px;
+    
+}
+    
+    
+.flor-texto:first-child{
+    
+flex: 2;
+padding: 25px;
+background-color: #ffffff;
+margin: 20px;  
+
+}
+    
+    
+.flor-texto div{
+    
+padding: 25px;
+background-color: #ffffff;
+margin: 20px;
+
+}
+
+/*TERMINA EL VIDEO RESPONSIVE*/
+
+
+
+/*SECCION PARA LA IMAGEN Y EL TEXTO*/
+
+.gato{
+
+position: relative;
+text-align: center;
+   
+}
+    
+.texto{
+    
+position: absolute;
+top:80%;
+left:70%;
+font-family:italic; /*para cambiar la fuente de la letra*/
+font-size: 20px;    /*tamaño de letra*/
+transform: translate(-80%, -80%);
+  
+}
+    
+.agua{
+    
+position: absolute;
+top: 50%;
+left: 50%;
+font-family:italic; /*para cambiar la fuente de la letra*/
+font-size: 60px;    /*tamaño de letra*/
+transform: translate(-50%, -20%);
+    
+}
+  
+
+/*ESTILOS AL VIDEO*/
+
+
+.header{
+
+height: 100vh;
+display: flex;
+align-items: center;
+
+}
+
+
+.content{
+
+max-width: 49rem;
+padding: left 1rem; 
+padding: right 1rem; 
+margin: auto;
+text-align: center;
+
+}
+
+
+/*PARA HACER QUE EL VIDEO SE ACHIQUITE Y AGRANDE DE LARGO SE APEQUEÑE Y DE ANCHO SE ALARGE*/
+
+/*PRIMER VIDEO*/
+
+.pes-video{
+
+position: relative;
+top: 0%;
+left: 0;
+width: 100%;
+height: 550%;
+overflow: hidden;
+padding-bottom: 56.25%;
+padding-top: 25px;
+height: 0;
+}
+
+.pes-video  video{
+
+
+position:absolute;
+top: 0;  
+left: 0; 
+width: 100%;
+height: 100%;
+
+}
+
+
+/*PARA EL VIDEO DOS*/
+
+.agua-video{
+
+position: relative;
+top: 0%;
+left: 0;
+width: 100%;
+height: 550px;
+overflow: hidden;
+padding-bottom: 56.25%;
+padding-top: 25px;
+height: 0;
+    
+}
+    
+
+.agua-video  video{
+
+position:absolute;
+top: 0;  
+left: 0; 
+width: 100%;
+height: 100%;
+    
+}
+
+
+/*PARA EL VIDEO TRES*/
+
+.cangrejo-video{
+
+position: relative;
+top: 0%;
+left: 0;
+width: 100%;
+height: 550px;
+overflow: hidden;
+padding-bottom: 56.25%;
+padding-top: 25px;
+height: 0;
+    
+}
+    
+
+.cangrejo-video video{
+
+position:absolute;
+top: 0;  
+left: 0; 
+width: 100%;
+height: 100%;
+
+}
+
+
+/*PARA EL VIDEO CUATRO*/
+
+.cangri-video{
+
+position: relative;
+top: 0%;
+left: 0;
+width: 100%;
+height: 550px;
+overflow: hidden;
+padding-bottom: 56.25%;
+padding-top: 25px;
+height: 0;
+        
+}
+
+
+.cangri-video video{
+
+position:absolute;
+top: 0;  
+left: 0; 
+width: 100%;
+height: 100%;
+
+}
+    
+
+
+/*APLICANDO LOS CORRESPONDIENTES ESTILOS A LAS TABLAS*/
+
+.table{
+
+text-align:justify;
+width: 100%;
+
+}
+
+th, td {
+
+width: 100%;
+height: 100%;
+text-align: left;
+border: 60px solid rgb(182, 158, 202);
+border:90px solid rgb(255, 255, 255);
+
+border-collapse: collapse;
+padding: 0.6em;
+caption-side: bottom;
+font-style: italic;
+    
+}
+
+td {
+font-style: italic;
+font-size: 20px;
+
+}
+
+
+/*APLICANDO ESTILOS Y ARREGLANDO EL CARUSEL*/
+
+/*PRIMER CARUSEL*/
+
+#carouselExample{
+
+text-align: relative;
+top: 0%;
+left: 0;
+width: 650px;
+height: 500px;
+overflow: hidden;
+
+}
+
+
+/*SEGUNDO CARUSEL*/
+
+#carouselExampleControlsNoTouching{
+
+text-align: right;
+top: 0%;
+left: 0;
+width: 650px;
+height: 500px;
+overflow: hidden;
+
+}
+
+/*TERCER CARUSEL*/
+
+#carouselExampleAutoplaying{
+
+position:center;
+top: 0%;
+left: 0;
+width: 650px;
+height: 500px;
+overflow: hidden;
+
+}
+
+/*CUARTO CARUSEL*/
+
+#carouselExampleRide{
+
+position:center;
+top: 0%;
+left: 0;
+width: 650px;
+height: 500px;
+overflow: hidden;
+
+}
+
+
+.ver {
+    background: #19191b;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .color {
+    color: #ffffff;
+    font-size: 25px;
+    padding: 29px 20px;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .ret, .rata {
+    padding: 30px 0;
+    text-align: center;
+  }
+  
+  .btn {
+    display: inline-block;
+    margin: 0 5px;
+    width: 120px;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .color {
+      padding: 29px 72px;
+      text-align: left;
+      width: auto;
+    }
+    
+    .ret, .rata {
+      flex-basis: auto;
+      padding: 0;
+      text-align: right;
+      width: auto;
+    }
+}
+  
+
+
+
+
+
+
+
+
+
+
+
